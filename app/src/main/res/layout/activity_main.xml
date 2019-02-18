@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lz.touchtest.MainActivity">
+
+    <com.lz.touchtest.viewgroup.EventViewGroupA
+        android:id="@+id/evg_a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#494949"
+        android:orientation="vertical">
+
+        <com.lz.touchtest.view.EventViewA
+            android:id="@+id/ev_a"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:background="#2ac3ff" />
+
+        <com.lz.touchtest.viewgroup.EventViewGroupB
+            android:id="@+id/evg_b"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:background="#6aeeff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.lz.touchtest.view.EventViewB
+                android:id="@+id/ev_b"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="#2ac3ff" />
+
+
+        </com.lz.touchtest.viewgroup.EventViewGroupB>
+
+
+    </com.lz.touchtest.viewgroup.EventViewGroupA>
+
+
+</FrameLayout>
